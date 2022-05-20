@@ -100,3 +100,12 @@ function stampa(){
 };
 
 stampa();
+
+const like = document.querySelectorAll(".like-button");
+
+like.forEach((btn) => {
+    btn.addEventListener("click",
+    function() {
+        btn.classList.add('like-button--liked');
+    })
+});
